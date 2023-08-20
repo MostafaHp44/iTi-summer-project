@@ -1,0 +1,24 @@
+<div id="body-container">
+  <div id="hero-section">
+    <div id="hero-text">
+      <p>Dress Better</p>
+      <p>
+        <span style="text-decoration: underline">Feel Better</span>
+      </p>
+    </div>
+  </div>
+  <section
+    id="products "
+    class="flex align-items-center justify-content-center flex-column"
+  >
+    <h1 style="font-size: 3rem; text-align: center" class="mt-5 mb-5">
+      Selected Products
+    </h1>
+    <div class="flex gap-4 flex-wrap align-items-center justify-content-center">
+      <app-products
+        *ngFor="let product of products"
+        [product]="product"
+      ></app-products>
+    </div>
+  </section>
+</div>
